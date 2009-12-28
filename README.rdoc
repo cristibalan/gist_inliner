@@ -1,6 +1,18 @@
 = gist_inliner
 
-Description goes here.
+Fetches gists and converts them to HTML so they are available without js and without calls to github.
+
+This is most handy for feeds, since js is disabled in most (all?) readers.
+
+== rack middleware
+
+A Rack middleware is included. You can use it like this:
+
+    require 'gist_inliner'
+    use GistInliner::RackMiddleware
+    run Proc.new { |env| [ 200, { 'Content-Type' => 'text/html' }, [ '<html><body><script src="http://gist.github.com/264628.js"></script></body></html>' ] ] }
+
+It has the obvious disadvantage of making a request at runtime and tying your code to your blog post or what have you. But if you use some sort of caching, it should be fine.
 
 == Note on Patches/Pull Requests
  

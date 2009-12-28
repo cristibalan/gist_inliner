@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="http://gist.github.com/stylesheets/gist/embed.css"/>
+<div id="gist-264628" class="gist">
+  
+  
+    
+            
+            
+
+      <div class="gist-file">
+        <div class="gist-data gist-syntax">
+          
+          
+          
+            <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="vg">$LOAD_PATH</span><span class="o">&lt;&lt;</span> <span class="s2">&quot;lib&quot;</span></div><div class="line" id="LC2"><span class="nb">require</span> <span class="s2">&quot;rubygems&quot;</span></div><div class="line" id="LC3"><span class="nb">require</span> <span class="s2">&quot;grapi&quot;</span></div><div class="line" id="LC4">&nbsp;</div><div class="line" id="LC5"><span class="nb">require</span> <span class="s2">&quot;yaml&quot;</span></div><div class="line" id="LC6"><span class="n">config</span><span class="o">=</span> <span class="no">YAML</span><span class="o">.</span><span class="n">load_file</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s2">&quot;~/.gdata.yml&quot;</span><span class="p">)</span></div><div class="line" id="LC7">&nbsp;</div><div class="line" id="LC8"><span class="n">reader</span><span class="o">=</span> <span class="no">Grapi</span><span class="o">::</span><span class="no">Reader</span><span class="o">.</span><span class="n">new</span></div><div class="line" id="LC9"><span class="nb">puts</span> <span class="n">reader</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">config</span><span class="o">[</span><span class="s2">&quot;username&quot;</span><span class="o">]</span><span class="p">,</span> <span class="n">config</span><span class="o">[</span><span class="s2">&quot;password&quot;</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">reading_list</span></div><div class="line" id="LC10">&nbsp;</div><div class="line" id="LC11">&nbsp;</div></pre></div>
+          
+        </div>
+
+        <div class="gist-meta">
+          <a href="http://gist.github.com/raw/264628/98676a335c2c1c3a6c73e520ac6933b40f4b6938/example.rb" style="float:right;">view raw</a>
+          <a href="http://gist.github.com/264628#file_example.rb" style="float:right;margin-right:10px;color:#666">example.rb</a>
+          <a href="http://gist.github.com/264628">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
+        </div>
+      </div>
+    
+      
+  
+</div>
